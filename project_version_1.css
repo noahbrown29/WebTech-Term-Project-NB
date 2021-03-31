@@ -84,8 +84,8 @@ body {
 }
 .gallery img:hover {
   transition-duration: 1s;
-  max-width: 600px;
-  max-height: 600px;
+  max-width: 350px;
+  max-height: 350px;
 }
 
 * {
