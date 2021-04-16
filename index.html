@@ -15,13 +15,44 @@
 
       gtag("config", "G-K2ERHRJS2Q");
     </script>
+    <script>
+      function validateForm() {
+        let firstName = document.getElementById("firstName").value;
+        let lastName = document.getElementById("lastName").value;
+        let enterComments = document.getElementById("enterComments").value;
+        if (firstName == "") {
+          alert("Please Enter in your First Name");
+          return;
+        } else if (lastName == "") {
+          alert("Please Enter your Last Name");
+          return;
+        } else if (enterComments == "") {
+          alert("Please leave some feedback in the comments");
+          return;
+        }
+      }
+      function muskChange(){
+        document.getElementById("musk_happy").src = "images/seriousmusk.jpg";
+        document.getElementById("description").innerHTML = "A Serious Elon Musk"
+      }
+      function muskChangeback() {
+        document.getElementById("musk_happy").src = "images/Elon_Musk.jpg";
+        document.getElementById("description").innerHTML = "A Happy Elon Musk"
+      }
+    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="Elon Musk, Tesla, SpaceX, NeuraLink, The Boring Company, Entrepreneurship, Tech"> 
-    <meta name="description" content="This website describes the companies of Elon Musk: Tesla, SpaceX, The Boring Company, and NeuraLink">
+    <meta
+      name="keywords"
+      content="Elon Musk, Tesla, SpaceX, NeuraLink, The Boring Company, Entrepreneurship, Tech"
+    />
+    <meta
+      name="description"
+      content="This website describes the companies of Elon Musk: Tesla, SpaceX, The Boring Company, and NeuraLink"
+    />
     <title>Project Version 1</title>
-    <link rel="stylesheet" href="project_version_1.css" />
+    <link rel="stylesheet" href="styles/index_homepage.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -30,40 +61,44 @@
   <body>
     <div class="main" id="main">
       <div class="header">
-        <h1>Companies of Musk</h1>
+      <h1>Companies of Musk.</h1>
+      </div>
+      <div class="header2">
+        <h2>Musk's most famous companies explained</h2>
       </div>
       <div class="icons">
-        <img src="search.svg" alt="search icon" />
-        <img src="menu.svg" alt="menu icon" id="menu" />
+        <img src="images/search.svg" alt="search icon" />
+        <img src="images/menu.svg" alt="menu icon" id="menu" />
       </div>
       <div class="logos">
         <div class="logo">
           <a href="tesla_page.html">
-            <img src="Tesla_Logo.jpg" alt="Tesla"
+            <img src="images/Tesla_Logo.jpg" alt="Tesla"
           /></a>
         </div>
         <div class="logo">
           <a href="spacex_page.html">
-            <img src="SpaceX-Logo.png" alt="SpaceX"
+            <img src="images/SpaceX-Logo.png" alt="SpaceX"
           /></a>
         </div>
         <div class="logo">
           <a href="boringcompany_page.html">
-            <img src="Boring_Company_Logo.png" alt="Boring"
+            <img src="images/Boring_Company_Logo.png" alt="Boring"
           /></a>
         </div>
         <div class="logo">
           <a href="neuralink_page.html">
-            <img src="NeuraLink_Logo.jpg" alt="NeuraLink"
+            <img src="images/NeuraLink_Logo.jpg" alt="NeuraLink"
           /></a>
         </div>
       </div>
       <hr />
       <div class="infoheader">
-        <h2>General Information</h2>
+        <h3>General Information</h3>
       </div>
       <div class="eloninfo">
-        <img src="Elon_Musk.jpg" alt="Elon Musk" />
+        <img id="musk_happy" onmouseover="muskChange()" onmouseout="muskChangeback()" alt="Elon Musk" src="images/Elon_Musk.jpg"/>
+        <div id="description">A Happy Elon Musk</div>
         <p>
           Elon Musk was born on June 28th, 1971 in Pretoria, South Africa. After
           leaving University of Pennsylvania, Musk enrolled in Stanford
@@ -112,54 +147,43 @@
       </div>
       <hr />
       <div class="gallery">
-        <img src="Model3.jpg" alt="model3" />
-        <img src="neuralink-copy.jpg" alt="neurlalink" />
-        <img src="boringcomp.png" alt="boringcomp" />
-        <img src="Rockets.png" alt="rocket" />
-        <img src="Elon-Musk-logos.jpg" alt="companies" />
+        <img src="images/Model3.jpg" alt="model3" />
+        <img src="images/neuralink-copy.jpg" alt="neurlalink" />
+        <img src="images/boringcomp.png" alt="boringcomp" />
+        <img src="images/Rockets.png" alt="rocket" />
+        <img src="images/Elon-Musk-logos.jpg" alt="companies" />
       </div>
       <hr />
       <div class="form">
-        <h3>Leave a comment</h3>
-        <div>
-          <div class="sectionone">
-            <label for="Last Name">Last Name:</label>
+      <form name="muskForm" onsubmit="return validateForm()" class="muskForm">
+          <label
+            >First Name:
+            <input id="firstName" type="text" name="FirstName" size="25" placeholder="Enter your First Name:"/>
+          </label>
+          <label
+            >Last Name:
+            <input type="text" id="lastName" name="LastName" size="25" placeholder="Enter your Last Name:"/>
+          </label>
+          <label
+            >Enter Comments:
             <input
+              id="enterComments"
               type="text"
-              id="Last Name"
-              name="lastname"
-              placeholder="Last Name"
+              name="EnterComments"
+              size="75"
+              placeholder="Enter Comments"
             />
-          </div>
-          <div>
-            <label for="First Name">First Name:</label>
-            <input
-              type="text"
-              id="First Name"
-              name="firstname"
-              placeholder="First Name"
-            />
-          </div>
-          <div>
-            <label for="Email">Email:</label>
-            <input
-              type="text"
-              id="Email"
-              name="email"
-              placeholder="Email Address"
-            />
-          </div>
-          <div>
-            <textarea
-              name="comments"
-              id="comments"
-              cols="30"
-              rows="10"
-              placeholder="Enter your comments here"
-            ></textarea>
-          </div>
+          </label>
         </div>
-      </div>
+        <div>
+          <input
+            onclick="validateForm()"
+            name="Submit"
+            type="button"
+            value="Submit"
+          />
+        </div>
+      </form>
     </div>
     <div class="menubar" id="menubar">
       <a href="tesla_page.html"><h3>Tesla</h3></a>
