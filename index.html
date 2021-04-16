@@ -31,13 +31,34 @@
           return;
         }
       }
-      function muskChange(){
+      function muskChange() {
         document.getElementById("musk_happy").src = "images/seriousmusk.jpg";
-        document.getElementById("description").innerHTML = "A Serious Elon Musk"
+        document.getElementById("description").innerHTML =
+          "A Serious Elon Musk";
       }
       function muskChangeback() {
         document.getElementById("musk_happy").src = "images/Elon_Musk.jpg";
-        document.getElementById("description").innerHTML = "A Happy Elon Musk"
+        document.getElementById("description").innerHTML = "A Happy Elon Musk";
+      }
+      function htwoChange() {
+        document.getElementById("header").innerHTML = "Tesla";
+        document.getElementById("header").style.color = 'red';
+      }
+      function htwochangeBack() {
+        document.getElementById("header").innerHTML ="Musk's most famous companies explained";
+        document.getElementById("header").style.color = 'black';
+      }
+      function htwoChanges() {
+        document.getElementById("header").innerHTML = "SpaceX";
+        document.getElementById("header").style.color = 'blue';
+      }
+      function htwoChangeb() {
+        document.getElementById("header").innerHTML = "The Boring Company";
+        document.getElementById("header").style.color = 'purple';
+      }
+      function htwoChangen() {
+        document.getElementById("header").innerHTML = "NeuraLink";
+        document.getElementById("header").style.color = 'pink';
       }
     </script>
     <meta charset="UTF-8" />
@@ -51,20 +72,20 @@
       name="description"
       content="This website describes the companies of Elon Musk: Tesla, SpaceX, The Boring Company, and NeuraLink"
     />
-    <title>Project Version 1</title>
+    <title>Companies of Musk</title>
     <link rel="stylesheet" href="styles/index_homepage.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
     <div class="main" id="main">
       <div class="header">
-      <h1>Companies of Musk.</h1>
+        <h1>Companies of Musk.</h1>
       </div>
       <div class="header2">
-        <h2>Musk's most famous companies explained</h2>
+        <h2 id="header">Musk's most famous companies explained</h2>
       </div>
       <div class="icons">
         <img src="images/search.svg" alt="search icon" />
@@ -73,22 +94,42 @@
       <div class="logos">
         <div class="logo">
           <a href="tesla_page.html">
-            <img src="images/Tesla_Logo.jpg" alt="Tesla"
+            <img
+              src="images/Tesla_Logo.jpg"
+              alt="Tesla"
+              id="teslaLogo"
+              onmouseover="htwoChange()"
+              onmouseout="htwochangeBack()"
           /></a>
         </div>
         <div class="logo">
           <a href="spacex_page.html">
-            <img src="images/SpaceX-Logo.png" alt="SpaceX"
+            <img
+              src="images/SpaceX-Logo.png"
+              alt="SpaceX"
+              id="spacexLogo"
+              onmouseover="htwoChanges()"
+              onmouseout="htwochangeBack()"
           /></a>
         </div>
         <div class="logo">
           <a href="boringcompany_page.html">
-            <img src="images/Boring_Company_Logo.png" alt="Boring"
+            <img
+              src="images/Boring_Company_Logo.png"
+              alt="Boring"
+              id="boringLogo"
+              onmouseover="htwoChangeb()"
+              onmouseout="htwochangeBack()"
           /></a>
         </div>
         <div class="logo">
           <a href="neuralink_page.html">
-            <img src="images/NeuraLink_Logo.jpg" alt="NeuraLink"
+            <img
+              src="images/NeuraLink_Logo.jpg"
+              alt="NeuraLink"
+              id="boringLogo"
+              onmouseover="htwoChangen()"
+              onmouseout="htwochangeBack()"
           /></a>
         </div>
       </div>
@@ -97,7 +138,13 @@
         <h3>General Information</h3>
       </div>
       <div class="eloninfo">
-        <img id="musk_happy" onmouseover="muskChange()" onmouseout="muskChangeback()" alt="Elon Musk" src="images/Elon_Musk.jpg"/>
+        <img
+          id="musk_happy"
+          onmouseover="muskChange()"
+          onmouseout="muskChangeback()"
+          alt="Elon Musk"
+          src="images/Elon_Musk.jpg"
+        />
         <div id="description">A Happy Elon Musk</div>
         <p>
           Elon Musk was born on June 28th, 1971 in Pretoria, South Africa. After
@@ -153,24 +200,47 @@
         <img src="images/Rockets.png" alt="rocket" />
         <img src="images/Elon-Musk-logos.jpg" alt="companies" />
       </div>
-      <hr/>
+      <hr />
       <div class="muskForm">
         <form onsubmit="return validateForm()">
           <label for="firstName">First Name: </label>
-          <input type="text" id="firstName" name="firstName" size="25" placeholder="Please Enter Your First Name: ">
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            size="25"
+            placeholder="Please Enter Your First Name: "
+          />
           <label for="lastName">Last Name: </label>
-          <input type="text" id="lastName" name="lastName" size="25" placeholder="Please Enter Your Last Name: ">
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            size="25"
+            placeholder="Please Enter Your Last Name: "
+          />
           <label for="enterComments">Please Leave a Comment: </label>
-          <input type="text" name="enterComments" id="enterComments" size="100" placeholder="Please Leave a Comment!">
-          <input type="button" name="submit" value="Submit" onclick="validateForm()">
+          <input
+            type="text"
+            name="enterComments"
+            id="enterComments"
+            size="100"
+            placeholder="Please Leave a Comment!"
+          />
+          <input
+            type="button"
+            name="submit"
+            value="Submit"
+            onclick="validateForm()"
+          />
         </form>
       </div>
-    <div class="menubar" id="menubar">
-      <a href="tesla_page.html"><h3>Tesla</h3></a>
-      <a href="spacex_page.html"><h3>SpaceX</h3></a>
-      <a href="boringcompany_page.html"><h3>Boring Company</h3></a>
-      <a href="neuralink_page.html"><h3>Neuralink</h3></a>
+      <div class="menubar" id="menubar">
+        <a href="tesla_page.html"><h3>Tesla</h3></a>
+        <a href="spacex_page.html"><h3>SpaceX</h3></a>
+        <a href="boringcompany_page.html"><h3>Boring Company</h3></a>
+        <a href="neuralink_page.html"><h3>Neuralink</h3></a>
+      </div>
     </div>
-  </div>
   </body>
 </html>

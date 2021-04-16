@@ -18,6 +18,9 @@ table {
   border-collapse: collapse;
   width: auto;
 }
+a {
+  text-decoration: none;
+}
 td,
 th {
   border: 1px solid white;
