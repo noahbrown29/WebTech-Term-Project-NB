@@ -86,5 +86,6 @@ body {
   width: 25px;
 }
 .bottom {
+    font-weight: bold;
     color: white;
 }

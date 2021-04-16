@@ -77,6 +77,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: mymove 5s infinite;
+}
+@keyframes mymove {
+  from {background-color: black;}
+  to {background-color: grey;}
 }
 .gallery img {
   max-width: 200px;
@@ -124,9 +129,9 @@ h3 {
   justify-content: center;
 }
 form {
-  background-color: white;
-  align-items: center;
-  position: absolute;
+  background-color:white;
+  align-items: left;
+  justify-content: left;
 }
 form div{
   text-align: center;
@@ -138,3 +143,12 @@ div #description {
   padding: 10px;
   text-align: center;
 }
+.form {
+  align-items: left;
+  position:fixed;
+  justify-content: left;
+  text-align: left;
+}
+
+
+

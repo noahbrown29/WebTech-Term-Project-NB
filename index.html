@@ -153,43 +153,24 @@
         <img src="images/Rockets.png" alt="rocket" />
         <img src="images/Elon-Musk-logos.jpg" alt="companies" />
       </div>
-      <hr />
-      <div class="form">
-      <form name="muskForm" onsubmit="return validateForm()" class="muskForm">
-          <label
-            >First Name:
-            <input id="firstName" type="text" name="FirstName" size="25" placeholder="Enter your First Name:"/>
-          </label>
-          <label
-            >Last Name:
-            <input type="text" id="lastName" name="LastName" size="25" placeholder="Enter your Last Name:"/>
-          </label>
-          <label
-            >Enter Comments:
-            <input
-              id="enterComments"
-              type="text"
-              name="EnterComments"
-              size="75"
-              placeholder="Enter Comments"
-            />
-          </label>
-        </div>
-        <div>
-          <input
-            onclick="validateForm()"
-            name="Submit"
-            type="button"
-            value="Submit"
-          />
-        </div>
-      </form>
-    </div>
+      <hr/>
+      <div class="muskForm">
+        <form onsubmit="return validateForm()">
+          <label for="firstName">First Name: </label>
+          <input type="text" id="firstName" name="firstName" size="25" placeholder="Please Enter Your First Name: ">
+          <label for="lastName">Last Name: </label>
+          <input type="text" id="lastName" name="lastName" size="25" placeholder="Please Enter Your Last Name: ">
+          <label for="enterComments">Please Leave a Comment: </label>
+          <input type="text" name="enterComments" id="enterComments" size="100" placeholder="Please Leave a Comment!">
+          <input type="button" name="submit" value="Submit" onclick="validateForm()">
+        </form>
+      </div>
     <div class="menubar" id="menubar">
       <a href="tesla_page.html"><h3>Tesla</h3></a>
       <a href="spacex_page.html"><h3>SpaceX</h3></a>
       <a href="boringcompany_page.html"><h3>Boring Company</h3></a>
       <a href="neuralink_page.html"><h3>Neuralink</h3></a>
     </div>
+  </div>
   </body>
 </html>
