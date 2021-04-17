@@ -9,8 +9,8 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 table {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -68,7 +68,7 @@ h2 {
   text-align: center;
 }
 body {
-  background-image: url("/images/spacebackground.jpg");
+  background-image: url("/images/spacebg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -83,6 +83,7 @@ body {
   font-size: 16px;
   border: none;
   cursor: pointer;
+  border-radius: 50%;
 }
 
 .dropdown {
@@ -121,4 +122,11 @@ body {
 }
 .infoheadercolor {
   background-color: whitesmoke;
+}
+.bottom a {
+  text-decoration: underline;
+  color: white;
+}
+.searchbar {
+  border-radius: 50%;
 }

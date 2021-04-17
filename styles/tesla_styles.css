@@ -89,6 +89,9 @@ th {
   position: relative;
   display: inline-block;
 }
+.searchbar {
+  border-radius: 50%;
+}
 
 .dropdown-content {
   display: none;
