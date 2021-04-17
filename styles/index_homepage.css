@@ -8,9 +8,6 @@
 body {
   width: 1500px;
 }
-.main {
-  width: 1500px;
-}
 .logos {
   display: flex;
   width: 100%;
@@ -91,13 +88,13 @@ a {
 }
 h1 {
   color: #111;
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: 120px;
+  font-size: 80px;
   font-weight: bold;
   letter-spacing: -1px;
   line-height: 1;
   text-align: center;
   justify-content: center;
+  font-family: 'Zen Dots', cursive;
 }
 h2 {
   color: #111;
@@ -179,4 +176,10 @@ div #description {
 }
 .dropdown:hover .dropbtn {
   background-color: grey;
+}
+.background_color {
+  background-color: whitesmoke;
+}
+.infoheadercolor {
+  background-color: whitesmoke;
 }
