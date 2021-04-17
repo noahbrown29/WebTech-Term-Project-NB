@@ -34,6 +34,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  background-color: white;
+  border-radius: 10%;
+  border: grey;
 }
 .eloninfo img {
   height: 200px;
