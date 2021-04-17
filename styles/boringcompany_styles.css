@@ -129,3 +129,6 @@ a {
   text-decoration: underline;
   color: white;
 }
+td a {
+  text-decoration: underline;
+}

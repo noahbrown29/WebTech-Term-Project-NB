@@ -26,7 +26,7 @@ th {
   border: 1px solid black;
   text-align: left;
   padding: 10px;
-  background-color: white;
+  background-color: whitesmoke;
 }
 tr:nth-child(even) {
   background-color: lightslategrey;
@@ -51,7 +51,7 @@ tr:nth-child(even) {
   max-height: 350px;
 }
 h1 {
-  color: whitesmoke;
+  color:white;
   font-family: "Zen Dots", cursive;
   font-size: 80px;
   font-weight: bold;
@@ -63,13 +63,14 @@ h1 {
 h2 {
   font-family: "Zen Dots", cursive;
   font-size: 40px;
-  color: white;
+  color:white;
   letter-spacing: -1px;
   text-align: center;
   justify-content: center;
+
 }
 body {
-  background-image: url("/images/neurabackgr.jpg");
+  background-image: url("/images/neurabg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -138,5 +139,8 @@ a {
 }
 .searchbar {
   border-radius: 50%;
+}
+td a {
+  text-decoration: underline;
 }
 

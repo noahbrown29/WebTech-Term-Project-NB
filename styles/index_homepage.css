@@ -27,8 +27,9 @@ body {
   transition-duration: 0.5s;
 }
 .logo img:hover {
-  max-height: 200px;
-  transition-duration: 0.5s;
+  max-height: 300px;
+  transition-duration: 1s;
+  transform: rotate(360deg);
 }
 .eloninfo {
   display: flex;
@@ -65,7 +66,7 @@ body {
 }
 @keyframes mymove {
   from {
-    background-color:whitesmoke;
+    background-color: whitesmoke;
   }
   to {
     background-color: grey;
@@ -90,18 +91,18 @@ a {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 h1 {
-  color:red;
+  color: red;
   font-size: 80px;
   font-weight: bold;
   letter-spacing: -1px;
   line-height: 1;
   text-align: center;
   justify-content: center;
-  font-family: 'Zen Dots', cursive;
+  font-family: "Zen Dots", cursive;
 }
 h2 {
   color: #111;
-  font-family: 'Zen Dots', cursive;
+  font-family: "Zen Dots", cursive;
   font-size: 25px;
   font-weight: 300;
   line-height: 32px;
@@ -111,7 +112,7 @@ h2 {
 }
 h3 {
   color: #111;
-  font-family: 'Zen Dots', cursive;
+  font-family: "Zen Dots", cursive;
   font-size: 25px;
   font-weight: 300;
   line-height: 32px;

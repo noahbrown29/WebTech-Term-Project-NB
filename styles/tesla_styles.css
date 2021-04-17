@@ -123,6 +123,11 @@ th {
 .infoheadercolor {
   background-color: whitesmoke;
 }
-.bottom {
+
+.bottom a {
   color: white;
+  text-decoration: underline;
+}
+td a {
+  text-decoration: underline;
 }
