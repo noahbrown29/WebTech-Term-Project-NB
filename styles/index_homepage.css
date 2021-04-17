@@ -87,7 +87,7 @@ a {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 h1 {
-  color: #111;
+  color:red;
   font-size: 80px;
   font-weight: bold;
   letter-spacing: -1px;
@@ -138,7 +138,7 @@ div #description {
   text-align: left;
 }
 .dropbtn {
-  background-color: white;
+  background-color: whitesmoke;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -169,13 +169,13 @@ div #description {
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: whitesmoke;
 }
 .dropdown:hover .dropdown-content {
   display: block;
 }
 .dropdown:hover .dropbtn {
-  background-color: grey;
+  background-color: whitesmoke;
 }
 .background_color {
   background-color: whitesmoke;
