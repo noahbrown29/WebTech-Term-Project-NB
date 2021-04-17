@@ -126,7 +126,7 @@ form {
   text-align: left;
 }
 form div {
-  text-align: lwft;
+  text-align: left;
   justify-content: center;
   align-items: left;
   position: absolute;
@@ -148,6 +148,10 @@ div #description {
   font-size: 16px;
   border: none;
   cursor: pointer;
+}
+.dropbtn img {
+  height: 20px;
+  width: 20px;
 }
 
 .dropdown {
@@ -186,4 +190,7 @@ div #description {
 }
 .infoheadercolor {
   background-color: whitesmoke;
+}
+.eloninfo a {
+  text-decoration: underline;
 }

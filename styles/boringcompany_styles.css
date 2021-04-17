@@ -132,3 +132,7 @@ a {
 td a {
   text-decoration: underline;
 }
+.dropbtn img {
+  height: 20px;
+  width: 20px;
+}

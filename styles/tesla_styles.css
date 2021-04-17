@@ -77,8 +77,6 @@ th {
   font-weight: bold;
 }
 .dropbtn {
-  background-color: whitesmoke;
-  color: whitesmoke;
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -97,7 +95,6 @@ th {
   display: none;
   position: absolute;
   right: 0;
-  background-color: whitesmoke;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -130,4 +127,8 @@ th {
 }
 td a {
   text-decoration: underline;
+}
+.dropbtn img {
+  height: 20px;
+  width: 20px;
 }
